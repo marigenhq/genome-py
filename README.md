@@ -1,22 +1,44 @@
-# genome reader
+genome reader
+=============
+.. image:: https://travis-ci.org/marigenhq/genome-reader.svg?branch=master
+  :target: https://travis-ci.org/marigenhq/genome-reader
+  :alt: Build Status
+     
+.. image:: https://codecov.io/gh/marigenhq/genome-reader/branch/master/graph/badge.svg
+  :target: https://codecov.io/gh/marigenhq/genome-reader
+  :alt: codecov
 
-[![Build Status](https://travis-ci.org/marigenhq/genome-reader.svg?branch=master)](https://travis-ci.org/marigenhq/genome-reader) [![codecov](https://codecov.io/gh/marigenhq/genome-reader/branch/master/graph/badge.svg)](https://codecov.io/gh/marigenhq/genome-reader) [![PyPI version](https://badge.fury.io/py/genome-reader.svg)](https://badge.fury.io/py/genome-reader) [![Documentation Status](https://readthedocs.org/projects/genome-reader/badge/?version=latest)](https://genome-reader.readthedocs.io/en/latest/?badge=latest)
+.. image:: https://badge.fury.io/py/genome-reader.svg
+  :target: https://badge.fury.io/py/genome-reader
+  :alt: Pypi Version
+  
+.. image:: https://readthedocs.org/projects/genome-reader/badge/?version=latest
+  :target: https://genome-reader.readthedocs.io/en/latest/?badge=latest
+  :alt: Documentation Status
 
 
-## Install
+Installing
+==========
 
-```
-pip install genome-reader
-```
+.. code-block:: shell
+   
+    pip install genome-reader
 
-## Usage
-```python
-from genome_reader import load
-genome = load('path/to/genome/data')
-# <Genome: SNPs=553190, name='data'>
-```
+Usage
+=====
 
-## Development
+.. code-block:: python
+   :linenos:
 
-[Data source](https://my.pgp-hms.org/public_genetic_data?utf8=%E2%9C%93&data_type=23andMe&commit=Search)
+    from genome_reader import load
+    genome = load('path/to/genome/data')
+    # <Genome: SNPs=553190, name='data'>
+
+
+Development
+===========
+
+`Data source`_
+
+.. _Data source: https://my.pgp-hms.org/public_genetic_data?utf8=%E2%9C%93&data_type=23andMe&commit=Search
 
