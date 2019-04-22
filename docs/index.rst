@@ -14,10 +14,6 @@ Genome Reader is a python library to read genome data into python object.
 
    api_reference/genome_reader
 
-.. toctree::
-   :maxdepth: 2
-   :caption: Contents:
-
 
 
 Indices and tables
