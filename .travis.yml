@@ -1,0 +1,27 @@
+language: python
+cache: pip
+python:
+  - '3.4'
+  - '3.5'
+  - '3.6'
+  - '3.7'
+  - '3.8'
+install:
+  - pip install .
+  - pip install pytest-cov codecov
+script:
+  - pytest --cov=./genome_reader
+notifications:
+  email: false
+after_success:
+  - codecov
+deploy:
+  provider: pypi
+  distributions: sdist bdist_wheel
+  user: marigen
+  password:
+    secure: wKbQkb4dL7Ops1rhUghg5fleFvyUX9XzZFw1VyEO6qaBfHhsfQg7AnyFMTI7tQZKUHsbFeH7HHk9qS42DQhJGcKmhbqa1dO4rd6XsgYVvhvw0mw/0akeiM5Y8RE8m1KuAUXjLgtv1UE4hsPJ5BnbYbZTG3cOYh3E6/BgwqLD2Q5cUjUg0sFhdWUQOncdicUdviUlw6rQ51RKW1lAP5fGFXUwe79A0KebHY7lJqvemkm+0d4n2JxNc6mNj7EpuWExlK5eQcqwd1pvaLuazIOIkL6JZ8nZovROBiSBcgauF/khSKABNb6YYV8jMvMBo61682I+7fO81EzXDnHx1n7/SNj+OUbikiUMr4tbbg4dd1A7o+6ibojknWSaAIAp6kCtjNdEf97i9RAB52oaWJJ9PYVlFR5aU2LYppyqhwrbfq0HAMxnOcPrjOcrSaqck+uop3J5avf8a8LkC3NSKUI51SEGnjrFbra7y0ztxYHyCmnPNqYCdqXOloHl+Rg0JBObnEIWnOEKYFSgah3W4c4UBLurGZyorzW2Kq9+cUGRflEYRzJwLKu8uNCADXcd6OtpGhR9E9/0Jw/HNGMOjOY+ero5MJfYi5vLMQxOlj4MCGc513PAOAsvq9whsT/3maRArICp6ri2sUK4UAZYL1hBfviI7BfdhDymL1VrOo0jo0Y=
+  on:
+    repo: marigenhq/genome-reader
+    python: 3.4
+    branch: master

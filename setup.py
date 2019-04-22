@@ -123,8 +123,8 @@ def setup_package():
 
     metadata = dict(
         name='genome_reader',
-        url='https://github.com/marigenhq/genome_reader',
-        download_url='https://github.com/marigenhq/genome_reader/tree/master',
+        url='https://github.com/marigenhq/genome-reader',
+        download_url='https://github.com/marigenhq/genome-reader/tree/master',
         author='Gary Lai',
         author_email='gary.lai@marigen.us',
         description='genome reader',

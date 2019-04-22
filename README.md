@@ -1,1 +1,1 @@
-# genome-reader
+# genome reader
