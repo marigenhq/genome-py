@@ -11,7 +11,7 @@ from setuptools import setup, find_packages
 __author__ = "Gary Lai"
 
 MAJOR = 0
-MINOR = 0
+MINOR = 1
 MICRO = 0
 ISRELEASED = False
 VERSION = '%d.%d.%d' % (MAJOR, MINOR, MICRO)

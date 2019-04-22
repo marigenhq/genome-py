@@ -1,0 +1,3 @@
+[run]
+source = genome_reader
+omit = genome_reader/tests/*
