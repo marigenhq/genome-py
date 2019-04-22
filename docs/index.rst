@@ -8,7 +8,7 @@ Welcome to Genome Reader's documentation!
 
 Genome Reader is a python library to read genome data into python object.
 
-.. include:: README.md
+.. include:: ../README.rst
 
 .. toctree::
    :caption: Documentation

@@ -128,7 +128,7 @@ def setup_package():
         author='Gary Lai',
         author_email='gary.lai@marigen.us',
         description='genome reader',
-        long_description=open('README.md', 'r').read(),
+        long_description=open('README.rst', 'r').read(),
         long_description_content_type='text/markdown',
         keywords='genome reader',
         license='MIT',

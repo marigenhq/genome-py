@@ -21,7 +21,7 @@ Installing
 ==========
 
 .. code-block:: shell
-   
+
     pip install genome-reader
 
 Usage
