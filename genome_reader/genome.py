@@ -1,7 +1,18 @@
+# coding=utf-8
+"""Genome"""
+
 import os
 
 
-class Genome(object):
+class Genome:
+    """
+    Genome
+
+    Parameters
+    ----------
+    name : str
+        name of input file
+    """
     def __init__(self, name):
         self.name = name
         self.dict = dict()
@@ -13,7 +24,7 @@ class Genome(object):
         return self.dict[key]
 
     def __repr__(self):
-        return "<Genome: SNPs={:d}, name={!r}>".format(self.__len__(),
+        return '<Genome: SNPs={:d}, name={!r}>'.format(self.__len__(),
                                                        os.path.os.path.basename(self.name))
 
     def __len__(self):
@@ -27,21 +38,5 @@ class Genome(object):
 
     def chromosome(self, key):
         def search(snp, key):
-            if snp.chromosome == key:
-                return snp
+            return snp if snp.chromosome == key else None
         return list(filter(lambda snp: search(snp, str(key)), self.dict.values()))
-
-
-class Genotype(object):
-    def __init__(self, genotype):
-        self._genotype = genotype
-
-    def __repr__(self):
-        return "<Genotype: {!r}>".format(str(self))
-
-    def __str__(self):
-        return self._genotype
-
-    def __eq__(self, other):
-        return self._genotype == other
-

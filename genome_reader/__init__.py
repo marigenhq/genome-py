@@ -1,10 +1,26 @@
+# coding=utf-8
+"""Genome Reader"""
+
 import os
 
-from genome_reader.genome import Genotype, Genome
-from genome_reader.snp import SNP
+from .genome import Genome
+from .snp import SNP
+from .genotype import Genotype
 
 
 def load(filename):
+    """
+
+    Parameters
+    ----------
+    filename : str
+        filepath to data source
+
+    Returns
+    -------
+    genome : Genome
+        Genome data
+    """
     filepath = os.path.expanduser(filename)
     genome = Genome(name=filepath)
     with open(filepath, 'r') as fin:

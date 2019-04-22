@@ -1,3 +1,7 @@
+# coding=utf-8
+"""conftest"""
+
+
 import pytest
 
 from genome_reader import Genotype, SNP
