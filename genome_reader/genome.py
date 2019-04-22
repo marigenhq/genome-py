@@ -19,9 +19,6 @@ class Genome(object):
     def __len__(self):
         return len(self.dict)
 
-    def update(self, *args, **kwargs):
-        return self.dict.update(*args, **kwargs)
-
     def __contains__(self, item):
         return item in self.dict
 
