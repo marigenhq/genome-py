@@ -1,26 +1,24 @@
 language: python
 cache: pip
 python:
-  - '3.4'
-  - '3.5'
-  - '3.6'
-  - '3.7'
-  - '3.8'
+- '3.4'
+- '3.5'
+- '3.6'
 install:
-  - pip install .
-  - pip install pytest-cov codecov
+- pip install .
+- pip install pytest-cov codecov
 script:
-  - pytest --cov=./genome_reader
+- pytest --cov=./genome_reader
 notifications:
   email: false
 after_success:
-  - codecov
+- codecov
 deploy:
   provider: pypi
   distributions: sdist bdist_wheel
   user: marigen
   password:
-    secure: wKbQkb4dL7Ops1rhUghg5fleFvyUX9XzZFw1VyEO6qaBfHhsfQg7AnyFMTI7tQZKUHsbFeH7HHk9qS42DQhJGcKmhbqa1dO4rd6XsgYVvhvw0mw/0akeiM5Y8RE8m1KuAUXjLgtv1UE4hsPJ5BnbYbZTG3cOYh3E6/BgwqLD2Q5cUjUg0sFhdWUQOncdicUdviUlw6rQ51RKW1lAP5fGFXUwe79A0KebHY7lJqvemkm+0d4n2JxNc6mNj7EpuWExlK5eQcqwd1pvaLuazIOIkL6JZ8nZovROBiSBcgauF/khSKABNb6YYV8jMvMBo61682I+7fO81EzXDnHx1n7/SNj+OUbikiUMr4tbbg4dd1A7o+6ibojknWSaAIAp6kCtjNdEf97i9RAB52oaWJJ9PYVlFR5aU2LYppyqhwrbfq0HAMxnOcPrjOcrSaqck+uop3J5avf8a8LkC3NSKUI51SEGnjrFbra7y0ztxYHyCmnPNqYCdqXOloHl+Rg0JBObnEIWnOEKYFSgah3W4c4UBLurGZyorzW2Kq9+cUGRflEYRzJwLKu8uNCADXcd6OtpGhR9E9/0Jw/HNGMOjOY+ero5MJfYi5vLMQxOlj4MCGc513PAOAsvq9whsT/3maRArICp6ri2sUK4UAZYL1hBfviI7BfdhDymL1VrOo0jo0Y=
+    secure: t9mDTydl3BUgTAYnch6yWgA1n3qe/Bf+m4sQQ26Q0k1WnGQDyjNIo2DEPF6p0VnHeNIOCaVU4tB3gqHmqgELOpejOymBUB5ZUEez5cdbqov8OytECSBRYn8Vr5v8V3lIV67oCsTM2CgX8GragIg4NKnqUec86fjNmI0dBvbB5ZYY8GLlShq7fv2/TBbZCY5RugOTN790V2nLDAC2PA5/l2TEcaunmRYvsFSj2hljDDTzoTVWWCXGSdFy+3GRO0K4leRMbsReYB8mX3wuK/xmrGJmtgnVwfYhQU8BMY31khgzq5b2oxAVEiXEDb9hnNbuTmQP2ZrCaZO/qEdwQ3I++7aT4q8MAoOdNt1lhI8V+TQJ+sKHfIE/7N6Zld09wJEI6+qudtgHEfsNm+XIbfvvQeMQXBX4dDwCZq3KUrPFPl8Rn5hXD1rm3/BKtpNv7+aLn6rDIShD6ljvfjulAdEEuZ3wl593bjphzo889UXo7uEb1hGhztpWYSuBtV3W3JkrWA/CZ41iFk4cabfmPuUzvL6Dhbz7VAgLBsY0gLHVMDNjwWOhR6XymQVEN+mURcRtGWlOp35HAOZ+ngNTHQDNcldxN3/PI8NlGLT51Ff6CAbqo4q0KItxlMVwecc50xP2B4GkKSdVpf0800+J9S8iuddY9cuYT2x7RaUahAeK32Y=
   on:
     repo: marigenhq/genome-reader
     python: 3.4
