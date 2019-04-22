@@ -1,3 +1,6 @@
+import os
+
+
 class Genome(object):
     def __init__(self, name):
         self.name = name
@@ -10,40 +13,14 @@ class Genome(object):
         return self.dict[key]
 
     def __repr__(self):
-        return "<Genome: SNPs={:d}, name={!r}, >".format(self.__len__(), self.name)
+        return "<Genome: SNPs={:d}, name={!r}>".format(self.__len__(),
+                                                       os.path.os.path.basename(self.name))
 
     def __len__(self):
         return len(self.dict)
 
-    def __delitem__(self, key):
-        del self.dict[key]
-
-    def clear(self):
-        return self.dict.clear()
-
-    def copy(self):
-        return self.dict.copy()
-
-    def has_key(self, k):
-        return k in self.dict
-
     def update(self, *args, **kwargs):
         return self.dict.update(*args, **kwargs)
-
-    def keys(self):
-        return self.dict.keys()
-
-    def values(self):
-        return self.dict.values()
-
-    def items(self):
-        return self.dict.items()
-
-    def pop(self, *args):
-        return self.dict.pop(*args)
-
-    def __cmp__(self, dict_):
-        return self.__cmp__(self.dict, dict_)
 
     def __contains__(self, item):
         return item in self.dict
@@ -57,10 +34,10 @@ class Genotype(object):
         self._genotype = genotype
 
     def __repr__(self):
-        return "<Genotype %r>" % str(self)
+        return "<Genotype: {!r}>".format(str(self))
 
     def __str__(self):
-        return str(self._genotype)
+        return self._genotype
 
     def __eq__(self, other):
         return self._genotype == other

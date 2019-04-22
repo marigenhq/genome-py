@@ -1,3 +1,5 @@
 [run]
 source = genome_reader
-omit = genome_reader/tests/*
+omit =
+    genome_reader/tests/*
+    genome_reader/version.py
