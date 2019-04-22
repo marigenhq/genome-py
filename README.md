@@ -10,9 +10,10 @@ pip install genome-reader
 ```
 
 ## Usage
-```
+```python
 from genome_reader import load
 genome = load('path/to/genome/data')
+# <Genome: SNPs=553190, name='data'>
 ```
 
 ## Development

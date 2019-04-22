@@ -36,6 +36,15 @@ class Genome:
     def __iter__(self):
         return iter(self.dict)
 
+    def keys(self):
+        return self.dict.keys()
+
+    def values(self):
+        return self.dict.values()
+
+    def items(self):
+        return self.dict.items()
+
     def chromosome(self, key):
         def search(snp, key):
             return snp if snp.chromosome == key else None
