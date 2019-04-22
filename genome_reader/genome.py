@@ -25,6 +25,12 @@ class Genome(object):
     def __iter__(self):
         return iter(self.dict)
 
+    def chromosome(self, key):
+        def search(snp, key):
+            if snp.chromosome == key:
+                return snp
+        return list(filter(lambda snp: search(snp, str(key)), self.dict.values()))
+
 
 class Genotype(object):
     def __init__(self, genotype):
