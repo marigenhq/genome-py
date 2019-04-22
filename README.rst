@@ -28,7 +28,6 @@ Usage
 =====
 
 .. code-block:: python
-   :linenos:
 
     from genome_reader import load
     genome = load('path/to/genome/data')
