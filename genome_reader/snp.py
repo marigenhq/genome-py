@@ -9,3 +9,8 @@ class SNP(object):
             self.chromosome,
             self.position,
             self.genotype)
+
+    def __eq__(self, other):
+        return self.genotype == other.genotype and \
+               self.position == other.position and \
+               self.genotype == other.genotype
