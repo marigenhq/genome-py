@@ -17,7 +17,7 @@ sys.path.insert(0, os.path.abspath('.'))
 
 # -- Project information -----------------------------------------------------
 
-project = 'genome-reader'
+project = 'genome-py'
 copyright = '2019, Gary Lai'
 author = 'Gary Lai'
 
@@ -81,4 +81,4 @@ html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'genome-reader'
+htmlhelp_basename = 'genome-py'

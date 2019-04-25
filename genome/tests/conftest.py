@@ -4,7 +4,7 @@
 
 import pytest
 
-from genome_reader import Genotype, SNP
+from genome import Genotype, SNP
 
 
 @pytest.fixture()

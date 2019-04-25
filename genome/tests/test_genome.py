@@ -1,6 +1,6 @@
 import os
 
-from genome_reader import load
+from genome import load
 
 
 def test_genome(snp):

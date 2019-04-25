@@ -1,23 +1,23 @@
 =================
-Genome Reader
+Genome
 =================
 
-.. automodule:: genome_reader
+.. automodule:: genome
     :members:
     :undoc-members:
     :show-inheritance:
 
-.. automodule:: genome_reader.genome
+.. automodule:: genome.genome
     :members:
     :undoc-members:
     :show-inheritance:
 
-.. automodule:: genome_reader.snp
+.. automodule:: genome.snp
     :members:
     :undoc-members:
     :show-inheritance:
 
-.. automodule:: genome_reader.genotype
+.. automodule:: genome.genotype
     :members:
     :undoc-members:
     :show-inheritance:

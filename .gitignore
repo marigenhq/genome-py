@@ -103,4 +103,4 @@ venv.bak/
 # mypy
 .mypy_cache/
 .idea/
-/genome_reader/version.py
+/genome/version.py

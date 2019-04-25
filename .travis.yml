@@ -8,7 +8,7 @@ install:
 - pip install .
 - pip install pytest-cov codecov
 script:
-- pytest --cov=./genome_reader
+- pytest --cov=./genome
 notifications:
   email: false
 after_success:
@@ -20,6 +20,6 @@ deploy:
   password:
     secure: t9mDTydl3BUgTAYnch6yWgA1n3qe/Bf+m4sQQ26Q0k1WnGQDyjNIo2DEPF6p0VnHeNIOCaVU4tB3gqHmqgELOpejOymBUB5ZUEez5cdbqov8OytECSBRYn8Vr5v8V3lIV67oCsTM2CgX8GragIg4NKnqUec86fjNmI0dBvbB5ZYY8GLlShq7fv2/TBbZCY5RugOTN790V2nLDAC2PA5/l2TEcaunmRYvsFSj2hljDDTzoTVWWCXGSdFy+3GRO0K4leRMbsReYB8mX3wuK/xmrGJmtgnVwfYhQU8BMY31khgzq5b2oxAVEiXEDb9hnNbuTmQP2ZrCaZO/qEdwQ3I++7aT4q8MAoOdNt1lhI8V+TQJ+sKHfIE/7N6Zld09wJEI6+qudtgHEfsNm+XIbfvvQeMQXBX4dDwCZq3KUrPFPl8Rn5hXD1rm3/BKtpNv7+aLn6rDIShD6ljvfjulAdEEuZ3wl593bjphzo889UXo7uEb1hGhztpWYSuBtV3W3JkrWA/CZ41iFk4cabfmPuUzvL6Dhbz7VAgLBsY0gLHVMDNjwWOhR6XymQVEN+mURcRtGWlOp35HAOZ+ngNTHQDNcldxN3/PI8NlGLT51Ff6CAbqo4q0KItxlMVwecc50xP2B4GkKSdVpf0800+J9S8iuddY9cuYT2x7RaUahAeK32Y=
   on:
-    repo: marigenhq/genome-reader
+    repo: marigenhq/genome-py
     python: 3.4
     branch: master

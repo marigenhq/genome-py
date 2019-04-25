@@ -3,4 +3,4 @@ Installation
 
 .. code-block:: shell
 
-    pip install genome-reader
+    pip install genome-py

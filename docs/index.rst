@@ -1,12 +1,12 @@
-.. genome-reader documentation master file, created by
+.. genome-py documentation master file, created by
    sphinx-quickstart on Sun Apr 21 19:20:07 2019.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Genome Reader's documentation!
+Welcome to Genome's documentation!
 =========================================
 
-Genome Reader is a python library to read genome data into python object.
+Genome is a python library to read genome data into python object.
 
 .. include:: ../README.rst
 
@@ -20,7 +20,7 @@ Genome Reader is a python library to read genome data into python object.
    :maxdepth: 2
    :caption: API Reference
 
-   api_reference/genome_reader
+   api_reference/genome
 
 .. toctree::
    :maxdepth: 2

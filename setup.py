@@ -51,10 +51,10 @@ def get_version_info(filename):
     elif os.path.exists(filename):
         # must be a source distribution, use existing version file
         try:
-            from genome_reader.version import dev_version as DEV_VERSION
+            from genome.version import dev_version as DEV_VERSION
         except ImportError:
             raise ImportError("Unable to import dev_version. Try removing "
-                              "genome_reader/version.py and the build directory "
+                              "genome/version.py and the build directory "
                               "before building.")
     else:
         DEV_VERSION = "Unknown"
@@ -88,7 +88,7 @@ if not release:
         a.close()
 
 
-VERSION_PY = 'genome_reader/version.py'
+VERSION_PY = 'genome/version.py'
 
 if sys.version_info[:2] < (3, 4):
     raise RuntimeError("Python version >= 3.4 required.")
@@ -122,12 +122,12 @@ def setup_package():
     write_version_py(filename=VERSION_PY)
 
     metadata = dict(
-        name='genome_reader',
-        url='https://github.com/marigenhq/genome-reader',
-        download_url='https://github.com/marigenhq/genome-reader/tree/master',
+        name='genome-py',
+        url='https://github.com/marigenhq/genome-py',
+        download_url='https://github.com/marigenhq/genome-py/tree/master',
         author='Gary Lai',
         author_email='gary.lai@marigen.us',
-        description='genome reader',
+        description='genome-py',
         long_description=open('README.rst', 'r').read(),
         long_description_content_type='text/markdown',
         keywords='genome reader',

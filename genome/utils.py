@@ -1,6 +1,5 @@
 # coding=utf-8
-"""Genome Reader"""
-
+"""Genome"""
 import os
 
 from .genome import Genome
