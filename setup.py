@@ -129,7 +129,7 @@ def setup_package():
         author_email='gary.lai@marigen.us',
         description='genome-py',
         long_description=open('README.rst', 'r').read(),
-        long_description_content_type='text/markdown',
+        long_description_content_type='text/x-rst',
         keywords='genome reader',
         license='MIT',
         packages=find_packages(exclude=EXCLUDE_FROM_PACKAGES),
