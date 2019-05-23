@@ -5,9 +5,9 @@ from genome import load
 
 def test_genome(snp):
     test_dir = os.path.dirname(os.path.realpath(__file__))
-    genome = load(os.path.join(str(test_dir), 'test.txt'))
+    genome = load(os.path.join(str(test_dir), 'tt.txt'))
     assert len(genome) == 10
-    assert repr(genome) == '<Genome: SNPs=10, name=\'test.txt\'>'
+    assert repr(genome) == '<Genome: SNPs=10, name=\'tt.txt\'>'
     assert 'rs75333668' in genome
     assert genome['rs75333668'] == snp
     keys = genome.keys()
