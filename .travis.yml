@@ -1,18 +1,20 @@
 language: python
 cache: pip
 python:
-- '3.4'
-- '3.5'
-- '3.6'
+  - '3.4'
+  - '3.5'
+  - '3.6'
+env:
+  - BOTO_CONFIG=/dev/null
 install:
-- pip install .
-- pip install pytest-cov codecov
+  - pip install .
+  - pip install pytest-cov codecov
 script:
-- pytest --cov=./genome
+  - pytest --cov=./genome
 notifications:
   email: false
 after_success:
-- codecov
+  - codecov
 deploy:
   provider: pypi
   distributions: sdist bdist_wheel
