@@ -2,6 +2,8 @@
 """Genome"""
 import os
 
+from smart_open import open
+
 from .genome import Genome
 from .snp import SNP
 from .genotype import Genotype

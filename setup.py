@@ -12,7 +12,7 @@ __author__ = "Gary Lai"
 
 MAJOR = 0
 MINOR = 1
-MICRO = 3
+MICRO = 4
 ISRELEASED = True
 VERSION = '%d.%d.%d' % (MAJOR, MINOR, MICRO)
 
@@ -136,6 +136,7 @@ def setup_package():
         package_data={'': ['*.txt', '*.json']},
         install_requires=[
             'typing==3.6.6',
+            'smart-open==1.8.3',
         ],
         tests_require=[
             'pytest',
