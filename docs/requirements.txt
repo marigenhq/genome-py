@@ -1,3 +1,4 @@
+urllib3==1.24.3
 Sphinx
 sphinx-autobuild
 sphinx-tabs
