@@ -136,7 +136,7 @@ def setup_package():
         package_data={'': ['*.txt', '*.json']},
         install_requires=[
             'typing==3.6.6',
-            'smart-open==1.8.3',
+            'smart_open==1.8.3',
         ],
         tests_require=[
             'pytest',
